@@ -1,0 +1,43 @@
+Display candidate motifs that are loaded:
+M600	-118.054	0.6
+PAC	-127.886	0.75
+M602	-144.995	0.05
+RRPE	-158.437	0.85
+Load gene list completed!
+Load binding information completed!
+
+Running on original data.
+Considering constraint: pres of M600 ...-119.554(1)
+Accepting constraint: pres of M600
+Adding motif M600
+Considering constraint: tss of M600 ...-105.777(-119.554)
+Accepting constraint: tss
+Considering constraint: orien of M600 ...-112.734(-105.777)
+Considering constraint: sec of M600 ...-112.555(-105.777)
+Deleting constraint pres of M600 ...-102.974(-105.777)
+Accepting deletion
+Choosing a new depth for motif M600 ...-104.942(-102.974)
+Considering constraint: pres of PAC ...-104.17(-102.974)
+Considering constraint: pres of M602 ...-100.416(-102.974)
+Accepting constraint: pres of M602
+Adding motif M602
+Deleting constraint tss of M600 ...-146.495(-100.416)
+Deleting constraint pres of M602 ...-102.974(-100.416)
+Choosing a new depth for motif M600 ...-103.94(-100.416)
+Considering constraint: orien of M600 ...-107.361(-100.416)
+Considering constraint: sec of M600 ...-107.366(-100.416)
+Considering constraint: dist of M600 and M602 ...-105.614(-100.416)
+Considering constraint: order of M600 and M602 ...-105.587(-100.416)
+Considering constraint: loop of M600 and M602 ...-106.916(-100.416)
+Choosing a new depth for motif M602 ...-100.416(-100.416)
+Considering constraint: tss of M602 ...-104.616(-100.416)
+Considering constraint: orien of M602 ...-108.556(-100.416)
+Considering constraint: sec of M602 ...-107.415(-100.416)
+Considering constraint: dist of M602 and M600 ...-105.614(-100.416)
+Considering constraint: order of M602 and M600 ...-105.587(-100.416)
+Considering constraint: loop of M602 and M600 ...-106.916(-100.416)
+Deleting constraint tss of M600 ...-146.495(-100.416)
+Deleting constraint pres of M602 ...-102.974(-100.416)
+Choosing a new depth for motif M600 ...-103.94(-100.416)
+Choosing a new depth for motif M602 ...-100.416(-100.416)
+Considering constraint: pres of RRPE ...-106.953(-100.416)

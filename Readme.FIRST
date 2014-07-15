@@ -1,0 +1,50 @@
+** Build procedure for BBNet and GBNet **
+Extract all source files into one folder. To build simply type:
+
+make
+
+in command line. It will automatically start building the executable files.
+After that, if you want to clean your folder, simply type:
+
+make clean
+
+in command line. It will delete all object files but keep the executable.
+In case you modify the source files, you may also want to clean the objects first and then "make"
+to make sure your updates are reflected in executables.
+
+** Verbose Mode **
+The default setting will produce a verbose version of BBNet which outputs each step of the 
+Bayesian network structure change. To switch off this behavior, you can do it like this:
+
+vi globals.h
+
+to edit globals.h. In the file, find "#define VERBOSE" and then turn it off by applying "//" to the 
+start of the line, like this: "// #define VERBOSE". This tells the preprocessor to bypass this line 
+so it won't be compiled. In command line, type "make" to re-build BBNet. 
+Therefore, all outputs to screen will be muted.
+
+** Functional Depth **
+The default functional depth varies from 0.05 to 0.95 as described in Beer's seed paper. 
+We extened it to add additonal depth from 0.01 to 0.04 because we found that in higher organisms, 
+binding motifs tend to be more degenerate than in lower ones. To switch on this additional depth, 
+you need to do some manual work as follows: 
+
+vi globals.h
+
+to edit globals.h. In the file, find "#define YY1FUNC" and then delete the preceding "//". 
+In command line, type "make" to re-build BBNet and GBNet. 
+
+** Procedure to run **
+A typical procedure to get data prepared and the program running is like this:
+
+func -> bayescor -> bbnet or gbnet
+
+func will prepare the functional depth files; bayescor calculates the Bayesian score for each 
+individual motif; bbnet or gbnet run the main programs of BBNet or GBNet.
+
+
+
+
+
+
+

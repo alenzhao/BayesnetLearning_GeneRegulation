@@ -1,0 +1,54 @@
+Number of genes in category 1: 114
+Number of genes in category 0: 1789
+
+************ Bayesian network parameters & results ************
+
+Number of repeats: 20
+Number of iterations: 10
+Number of required changes: 300
+Temperature changing rate Alpha: 0.9
+Initial temperature: 10
+
+Candidate motifs: 5
+Use prior information for preferred motifs? 0
+Parameter of prior of network structure: 6.5
+
+
+Single node presence score and optimal depth:
+M600	-113.054	0.6
+PAC	-122.886	0.75
+M602	-139.995	0.05
+RRPE	-153.437	0.85
+
+Bayesian score of the network: -96.1711
+Un-penalized Bayesian score: -83.1711
+
+Constraints: 
+1. Distance to TSS of M600:140, 0.6
+2. Distance to TSS of M602:240, 0.7
+
+Number of genes that satisfy each constraint: 
+	In bkg	In node	P-value
+1	5	73	3.4669e-94
+2	61	64	1.91476e-52
+
+Conditional probability table:
+	k = 0	k = 1	P-value
+00	1723	23
+01	5	27	6.63473e-30
+10	61	18	3.38762e-07
+11	0	46	2.48261e-61
+
+* -96.0966
+* 1. Distance to TSS of M600:160, 0.6
+* 2. Distance to TSS of M602:120, 0.7
+
+* 	In bkg	In node
+* 1	10	78
+* 2	20	35
+
+* 	k = 0	k = 1
+* 00	1759	25
+* 01	10	54
+* 10	20	11
+* 11	0	24
