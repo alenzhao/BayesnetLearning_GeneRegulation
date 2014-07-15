@@ -1,20 +1,14 @@
 GBNet: (G)ibbs sampling enhanced (B)ayesian (Net)work
 =====
+Li Shen, UCSD
+Feb. 11, 2008
 
 Reference:
 Shen, L., Liu, J. and Wang, W. (2008) GBNet: Deciphering regulatory rules in the co-regulated genes using a Gibbs sampler enhanced Bayesian network approach, BMC Bioinformatics, 9, 395.
 
 
-Bayesian network learning of gene regulatory rules. This is a toolset for inferring transcriptional rules from a group of co-regulated genes using Bayesian networks. 
---
-Li Shen, UCSD
-Feb. 11, 2008
+Bayesian network learning of gene regulatory rules. This is a toolset for inferring transcriptional rules from a group of co-regulated genes using Bayesian networks. This toolset is separated into four programs: func, bayescor, bbnet AND gbnet. bbnet and gbnet use bayescor's OUTPUT as INPUT. bayescor, bbnet and gbnet all depend on the functional depth files from func.
 
-This toolset is separated into four programs: func, bayescor, bbnet AND gbnet.
-
-bbnet and gbnet use bayescor's OUTPUT as INPUT.
-
-bayescor, bbnet and gbnet all depend on the functional depth files from func.
 
 ******************************************************************************
 * func: Prepare the functional depth files for a motif list on all sequences.*
